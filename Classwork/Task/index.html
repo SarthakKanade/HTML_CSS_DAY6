@@ -1,270 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>HTML + CSS Learning Hub</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <head>
+        <meta charset="UTF-8" />
+        <title>HTML + CSS Learning Hub</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f3f6fb;
-      color: #333;
-      line-height: 1.6;
-    }
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                color: #333;
+                line-height: 1.6;
+                background-image: url('https://imgs.search.brave.com/3mwl6iMJufMgm3ePoW--Y1yR9o1J_fYFu-_QV_z28AA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYW50/by13cC1tZWRpYS5z/My5hbWF6b25hd3Mu/Y29tL2FwcC91cGxv/YWRzLzIwMTkvMDcv/MTkxOTQ0MTYvaW5z/ZXJ0LWltYWdlLWh0/bWwtNC5qcGc');
+                background-color: #f3f6fb;
+                background-size: cover;
+                background-attachment: fixed;
+            }
 
-    header {
-      background-color: #cfe2ff;
-      padding: 40px 20px;
-      text-align: center;
-      border-radius: 10px;
-      margin: 20px auto 10px;
-      max-width: 960px;
-    }
+            header {
+                background-color: #cfe2ff;
+                padding: 40px 20px;
+                text-align: center;
+                border-radius: 10px;
+                margin: 20px auto 10px;
+                max-width: 960px;
+            }
 
-    header h1 {
-      font-size: 2.5rem;
-      color: #0d3b66;
-    }
+            header h1 {
+                font-size: 2.5rem;
+                color: #0d3b66;
+            }
 
-    header p {
-      font-size: 1.1rem;
-      color: #333;
-      margin-top: 10px;
-    }
+            header p {
+                font-size: 1.1rem;
+                color: #333;
+                margin-top: 10px;
+            }
 
-    nav {
-      background-color: #a5dfc1;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px;
-      border-radius: 8px;
-      margin: 10px auto;
-      max-width: 940px;
-    }
+            nav {
+                background-color: #a5dfc1;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                padding: 15px;
+                border-radius: 8px;
+                margin: 10px auto;
+                max-width: 940px;
+            }
 
-    nav a {
-      color: #0d3b66;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-    }
+            nav a {
+                color: #0d3b66;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1rem;
+            }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+            nav a:hover {
+                text-decoration: underline;
+            }
 
-    .container {
-      max-width: 960px;
-      background-color: white;
-      margin: 20px auto;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
+            .container {
+                max-width: 960px;
+                background-color: white;
+                margin: 20px auto;
+                padding: 25px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            }
 
-    h2 {
-      color: #0d3b66;
-      background-color: #dbe9ff;
-      padding: 10px 15px;
-      border-radius: 6px;
-      font-size: 1.5rem;
-      margin-top: 30px;
-    }
+            h2 {
+                color: #0d3b66;
+                background-color: #dbe9ff;
+                padding: 10px 15px;
+                border-radius: 6px;
+                font-size: 1.5rem;
+                margin-top: 30px;
+            }
 
-    .card {
-      background-color: #f0f4ff;
-      padding: 12px 18px;
-      border-left: 5px solid #82b1ff;
-      margin: 12px 0;
-      border-radius: 6px;
-    }
+            .card {
+                background-color: #f0f4ff;
+                padding: 12px 18px;
+                border-left: 5px solid #82b1ff;
+                margin: 12px 0;
+                border-radius: 6px;
+            }
 
-    .card b {
-      font-family: monospace;
-      background-color: #e2ebff;
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
+            .card b {
+                font-family: monospace;
+                background-color: #e2ebff;
+                padding: 2px 6px;
+                border-radius: 4px;
+            }
 
-    /* Practice Tasks Styles */
-    .t1 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #0d3b66;
-      margin-bottom: 18px;
-      padding-bottom: 6px;
-      border-bottom: 3px solid #a5dfc1;
-    }
+            .t1 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: #0d3b66;
+                margin-bottom: 18px;
+                padding-bottom: 6px;
+                border-bottom: 3px solid #a5dfc1;
+            }
 
-    .practice-box {
-      padding: 16px 20px;
-      margin-bottom: 16px;
-      border-radius: 8px;
-      font-size: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
-      color: #fff;
-    }
+            .practice-box {
+                padding: 16px 20px;
+                margin-bottom: 16px;
+                border-radius: 8px;
+                font-size: 1rem;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+                color: #fff;
+            }
 
-    .green-box {
-      background-color: #4caf50;
-    }
+            .green-box {
+                background-color: #4caf50;
+            }
 
-    .blue-box {
-      background-color: #2196f3;
-    }
+            .blue-box {
+                background-color: #2196f3;
+            }
 
-    .red-box {
-      background-color: #f44336;
-    }
+            .red-box {
+                background-color: #f44336;
+            }
 
-    /* Flex container and items */
-    .flex-container {
-      display: flex;
-      gap: 20px;
-      margin: 20px 0 16px;
-    }
+            .flex-container {
+                display: flex;
+                gap: 20px;
+                margin: 20px 0 16px;
+            }
 
-    .flex-item {
-      flex: 1;
-      padding: 16px;
-      background-color: #a5dfc1;
-      color: #0d3b66;
-      font-weight: 600;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
-      user-select: none;
-    }
+            .flex-item {
+                flex: 1;
+                padding: 16px;
+                background-color: #a5dfc1;
+                color: #0d3b66;
+                font-weight: 600;
+                text-align: center;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+                user-select: none;
+            }
 
-    .item1 {
-      background-color: #81c784;
-    }
+            .item1 {
+                background-color: #81c784;
+            }
 
-    .item2 {
-      background-color: #66bb6a;
-    }
+            .item2 {
+                background-color: #66bb6a;
+            }
 
-    /* Highlight text */
-    .highlight-text {
-      background-color: #fff3cd;
-      border: 1px solid #ffeeba;
-      padding: 14px 18px;
-      border-radius: 8px;
-      color: #856404;
-      font-size: 1rem;
-      margin-bottom: 18px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
+            .highlight-text {
+                background-color: #fff3cd;
+                padding: 14px 18px;
+                border-radius: 8px;
+                font-size: 1rem;
+                margin-bottom: 18px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            }
 
-    /* Centered box */
-    .centered-box {
-      background-color: #bbdefb;
-      padding: 20px 25px;
-      margin-bottom: 18px;
-      border-radius: 10px;
-      text-align: center;
-      font-weight: 600;
-      color: #0d47a1;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
-      user-select: none;
-    }
+            .bordered-box {
+                border: 1px dashed #999;
+                background-color: #e3f2fd;
+                color: #0d3b66;
+            }
 
-    /* Alert box */
-    .alert-box {
-      background-color: #f8d7da;
-      color: #721c24;
-      padding: 16px 22px;
-      border-radius: 12px;
-      border: 1px solid #f5c6cb;
-      font-weight: 600;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
-      user-select: none;
-    }
+            .simple-border {
+                border: 2px dotted #4caf50;
+                background-color: #e8f5e9;
+                color: #256029;
+            }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-      color: #666;
-      font-size: 0.95rem;
-      background-color: #d6e4f7;
-      border-radius: 10px;
-      max-width: 960px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  </style>
-</head>
-<body>
+            .rounded-box {
+                border-radius: 14px;
+                background-color: #fff3cd;
+                color: #856404;
+                border: 1px solid #ffeeba;
+            }
 
-  <header>
-    <h1>HTML + CSS Learning Hub</h1>
-    <p>Your guide to building beautiful web pages</p>
-  </header>
+            .centered-box {
+                padding: 20px 25px;
+                margin-bottom: 18px;
+                text-align: center;
+                font-weight: 600;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+                user-select: none;
+            }
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">HTML</a>
-    <a href="#">CSS</a>
-    <a href="#">Practice</a>
-    <a href="#">Contact</a>
-  </nav>
+            .alert-box {
+                padding: 16px 22px;
+                font-weight: 600;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+                user-select: none;
+            }
 
-  <div class="container">
-    <h2>📘 HTML Tags</h2>
-    <div class="card"><b>html</b> — Root of the HTML document</div>
-    <div class="card"><b>head</b> — Metadata like title and links</div>
-    <div class="card"><b>body</b> — Visible content on the page</div>
-    <div class="card"><b>h1 to h6</b> — Headings from large to small</div>
-    <div class="card"><b>p</b> — Paragraph text</div>
-    <div class="card"><b>div</b> — Section or block container</div>
-    <div class="card"><b>a</b> — Link to another page</div>
-    <div class="card"><b>ul, ol, li</b> — Lists (unordered, ordered, items)</div>
+            footer {
+                text-align: center;
+                padding: 20px;
+                margin-top: 30px;
+                color: #666;
+                font-size: 0.95rem;
+                background-color: #d6e4f7;
+                border-radius: 10px;
+                max-width: 960px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
 
-    <h2>🎨 CSS Properties</h2>
-    <div class="card"><b>color</b> — Text color</div>
-    <div class="card"><b>background-color</b> — Background of an element</div>
-    <div class="card"><b>padding</b> — Space inside an element</div>
-    <div class="card"><b>margin</b> — Space outside an element</div>
-    <div class="card"><b>border</b> — Outline around elements</div>
-    <div class="card"><b>font-size</b> — Controls text size</div>
-    <div class="card"><b>text-align</b> — Aligns text (left, center, right)</div>
+        <header>
+            <h1>HTML + CSS Learning Hub</h1>
+            <p>Your guide to building beautiful web pages</p>
+        </header>
 
-    <h2>🧠 Practice Tasks</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Practice</a>
+            <a href="#">Contact</a>
+        </nav>
 
-    <div class="t1" id="Prac">🧠 Practice Examples</div>
+        <div class="container">
+            <h2>📘 HTML Tags</h2>
+            <div class="card"><b>html</b> — Root of the HTML document</div>
+            <div class="card"><b>head</b> — Metadata like title and links</div>
+            <div class="card"><b>body</b> — Visible content on the page</div>
+            <div class="card"><b>h1 to h6</b> — Headings from large to small</div>
+            <div class="card"><b>p</b> — Paragraph text</div>
+            <div class="card"><b>div</b> — Section or block container</div>
+            <div class="card"><b>a</b> — Link to another page</div>
+            <div class="card"><b>ul, ol, li</b> — Lists (unordered, ordered, items)</div>
 
-    <div class="practice-box green-box">
-      Try modifying <b>padding</b> and <b>margin</b> values and observe changes.
-    </div>
+            <h2>🎨 CSS Properties</h2>
+            <div class="card"><b>color</b> — Text color</div>
+            <div class="card"><b>background-color</b> — Background of an element</div>
+            <div class="card"><b>padding</b> — Space inside an element</div>
+            <div class="card"><b>margin</b> — Space outside an element</div>
+            <div class="card"><b>border</b> — Outline around elements</div>
+            <div class="card"><b>font-size</b> — Controls text size</div>
+            <div class="card"><b>text-align</b> — Aligns text (left, center, right)</div>
 
-    <div class="practice-box blue-box"><strong>Box 1:</strong> Padding: 20px | Margin: 10px</div>
-    <div class="practice-box red-box"><strong>Box 2:</strong> Padding: 0 | Margin: 30px</div>
+            <div class="t1" id="Prac">🧠 Practice Examples</div>
 
-    <div class="flex-container">
-      <div class="flex-item item1">Flex Item 1</div>
-      <div class="flex-item item2">Flex Item 2</div>
-    </div>
+            <div class="practice-box green-box">
+                Try modifying <b>padding</b> and <b>margin</b> values and observe changes.
+            </div>
 
-    <div class="highlight-text">
-      Experiment with <code>text-align</code>, <code>font-size</code>, and <code>border-radius</code>.
-    </div>
+            <div class="practice-box blue-box"><strong>Box 1:</strong> Padding: 20px | Margin: 10px</div>
+            <div class="practice-box red-box"><strong>Box 2:</strong> Padding: 0 | Margin: 30px</div>
 
-    <div class="centered-box">Centered and styled text!</div>
+            <div class="flex-container">
+                <div class="flex-item item1">Flex Item 1</div>
+                <div class="flex-item item2">Flex Item 2</div>
+            </div>
 
-    <div class="alert-box">Rounded corner alert box.</div>
+            <div class="highlight-text bordered-box">
+                Experiment with <code>text-align</code>, <code>font-size</code>, and <code>border-radius</code>.
+            </div>
 
-  </div>
+            <div class="centered-box simple-border">
+                Centered and styled text!
+            </div>
 
-  <footer>
-    © 2025 HTML + CSS Learning Hub
-  </footer>
+            <div class="alert-box rounded-box">
+                Rounded corner alert box.
+            </div>
+        </div>
 
-</body>
+        <footer>
+            © 2025 HTML + CSS Learning Hub
+        </footer>
+
+    </body>
 </html>
